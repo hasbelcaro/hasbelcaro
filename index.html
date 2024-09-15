@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hasbel Africano Caro - Desarrollador Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Reset de estilos */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(to right, #2c86d0, #3387b0);
+        color: #fff;
+        padding: 40px 0;
+      }
+      header nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      header .intro {
+        text-align: center;
+      }
+      header .intro img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0px;
+      }
+      header .intro h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+      header .intro p {
+        font-size: 1.2em;
+      }
+      main {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: #8f94fb;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+      }
+      .projects,
+      .skills,
+      .blog-posts,
+      .certifications {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .project,
+      .blog-post,
+      .certification {
+        flex: 1 1 calc(50% - 20px);
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .skills ul,
+      .contact ul {
+        list-style: none;
+      }
+      .skills li,
+      .contact li {
+        margin-bottom: 10px;
+      }
+      .contact-button {
+        display: inline-block;
+        background: #25d366;
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .contact-button:hover {
+        background: #1ebe5d;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      @media (max-width: 768px) {
+        .project,
+        .blog-post,
+        .certification {
+          flex: 1 1 100%;
+        }
+        header .intro h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#blog">Blog</a>
+        <a href="#contribuciones">Contribuciones</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="intro">
+        <img src="assets/profile.jpeg" alt="Fotografía de Hasbel Africano" />
+        <h1>Hasbel Africano Caro</h1>
+        <p>
+          Desarrollador Web dedicado a transformar ideas en productos digitales.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>
+          Tengo más de 7 años de experiencia en el desarrollo de aplicaciones
+          web y móviles. Mi objetivo es crear soluciones eficientes y escalables
+          que generen valor para los usuarios. Me gradué en Ingeniería de
+          Sistemas en la Universitaria de Investigación y Desarrollo UDI en el
+          2016 y desde entonces he desarrollado para empresas de diferentes
+          sectores.
+        </p>
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>Plataforma con Laravel - PHP</h3>
+            <p>
+              Desarrollo de plataformas de PHP utilizando Laravel y Vue js
+              incorporando servicios Web (Rest API - SOAP).
+            </p>
+          </div>
+          <div class="project">
+            <h3>Aplicación de Despachos</h3>
+            <p>
+              App en React Native que permite a los usuarios llevar un
+              seguimiento con firma de sus remisiones a los clientes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <ul>
+            <li><strong>Lenguajes:</strong> PHP, JavaScript</li>
+            <li><strong>Frameworks y Librerías:</strong> Laravel, React</li>
+            <li>
+              <strong>Herramientas y Plataformas:</strong> Git, Docker, Mongo,
+              Firebase
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-posts">
+          <div class="blog-post">
+            <h3>Introducción a Kubernetes para Desarrolladores Web</h3>
+            <p>
+              Una guía para comenzar a usar Kubernetes en entornos de desarrollo
+              web.
+            </p>
+          </div>
+          <div class="blog-post">
+            <h3>Cómo mejorar la accesibilidad en aplicaciones móviles</h3>
+            <p>
+              Mejores prácticas para hacer tus aplicaciones móviles más
+              accesibles.
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section id="contribuciones">
+        <h2>Contribuciones a Open Source</h2>
+        <p>
+          Participación en el desarrollo del proyecto
+          <a href="https://github.com/health-tracker-api"
+            >"Health Tracker API"</a
+          >
+          en GitHub, enfocada en promover estándares abiertos en aplicaciones de
+          salud.
+        </p>
+      </section> -->
+
+      <section id="certificaciones">
+        <h2>Títulos y Certificados</h2>
+        <div class="certifications">
+          <div class="certification">
+            <h3>Títulos</h3>
+            <ul>
+              <li>Ingeniero de Sistemas (2016)</li>
+              <li>Tecnólogo en Diseño y Administración de Sistemas (2012)</li>
+            </ul>
+          </div>
+          <div class="certification">
+            <h3>Certificados</h3>
+            <ul>
+              <li>
+                Ganador del Hackathon XYZ 2021 por el desarrollo de una solución
+                de IoT para hogares inteligentes.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Si estás interesado en colaborar o simplemente deseas conversar sobre
+          tecnología, no dudes en contactarme.
+        </p>
+        <a
+          class="contact-button"
+          href="https://wa.me/+573164145025"
+          target="Hola, estoy interesdo en contactarte."
+          >Contactar por WhatsApp</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Hasbel Africano</p>
+    </footer>
+  </body>
+</html>
